@@ -1,7 +1,7 @@
 # Личный проект «Мишка» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Илья Феофилов](https://up.htmlacademy.ru/adaptive/10/user/233524).
-* Наставник: `Неизвестно`.
+* Наставник: [Анастасия Мусаэльян](https://up.htmlacademy.ru/adaptive/10/user/124940).
 
 ---
 
