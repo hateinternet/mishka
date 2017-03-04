@@ -7,17 +7,25 @@
   <body>
     <header class="page-header">
       <div class="page-header__logo">
-        <a class="page-header__link" href="#">
-          <img class="page-header__picture" src="#" alt="Логотип" width="90" height="40">
+        <a class="page-header__link" href="index.html">
+          <img class="page-header__picture" src="http://placehold.it/90x40" alt="Логотип" width="90" height="40">
         </a>
       </div>
       <a class="page-header__menu-btn  page-header__menu-btn--open" href="#"></a>
       <div class="page-header__menu  hidden-element">
         <ul class="page-header__list">
-          <li class="page-header__item">Каталог товаров</li>
-          <li class="page-header__item">Вязание на заказ</li>
-          <li class="page-header__item  page-header__item--search">Поиск по сайту</li>
-          <li class="page-header__item  page-header__item--cart">Корзина: пока пуста</li>
+          <li class="page-header__item">
+            <a>Каталог товаров</a>
+          </li>
+          <li class="page-header__item">
+            <a href="form.html">Вязание на заказ</a>
+          </li>
+          <li class="page-header__item  page-header__item--search">
+            <a href="#">Поиск по сайту</a>
+          </li>
+          <li class="page-header__item  page-header__item--cart">
+            <a href="#">Корзина: пока пуста</a>
+          </li>
         </ul>
       </div>
     </header>
@@ -26,7 +34,7 @@
       <div class="catalog">
         <div class="product  catalog__item">
           <a class="product__picture-link" href="#">
-            <img class="product__picture" src="#" alt="Зайчик-попрыгайчик" width="260" height="195">
+            <img class="product__picture" src="http://placehold.it/260x195" alt="Зайчик-попрыгайчик" width="260" height="195">
           </a>
           <h2 class="product__title">Зайчик-попрыгайчик</h2>
           <p class="product__description">Рост 30 см, вес 200г</p>
@@ -35,7 +43,7 @@
         </div>
         <div class="product  catalog__item">
           <a class="product__picture-link" href="#">
-            <img class="product__picture" src="#" alt="Корзинка для белья" width="260" height="195">
+            <img class="product__picture" src="http://placehold.it/260x195" alt="Корзинка для белья" width="260" height="195">
           </a>
           <h2 class="product__title">Корзинка для белья</h2>
           <p class="product__description">Диаметр 15 см, высота 10 см</p>
@@ -44,7 +52,7 @@
         </div>
         <div class="product  catalog__item">
           <a class="product__picture-link" href="#">
-            <img class="product__picture" src="#" alt="Большая корзинка для игрушек" width="260" height="195">
+            <img class="product__picture" src="http://placehold.it/260x195" alt="Большая корзинка для игрушек" width="260" height="195">
           </a>
           <h2 class="product__title">Большая корзинка для игрушек</h2>
           <p class="product__description">Диаметр 30 см, высота 30 см</p>
@@ -65,7 +73,7 @@
       </div>
     </div>
     <div class="modal hidden-element">
-      <form class="modal__form" action="#">
+      <form class="modal__form" action="https://echo.htmlacademy.ru/">
         <div class="modal__title">Добавить в корзину</div>
         <p class="modal__text">Выберите размер:</p>
         <input class="modal__radio  modal__radio--active" type="radio" name="size" value="s" id="s" checked>

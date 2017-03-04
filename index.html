@@ -7,17 +7,25 @@
   <body>
     <header class="page-header">
       <div class="page-header__logo">
-        <a class="page-header__link" href="#">
-          <img class="page-header__picture" src="#" alt="Логотип" width="90" height="40">
+        <a class="page-header__link">
+          <img class="page-header__picture" src="http://placehold.it/90x40" alt="Логотип" width="90" height="40">
         </a>
       </div>
       <a class="page-header__toggle  page-header__toggle--open" href="#"></a>
       <div class="page-header__menu  hidden-element">
         <ul class="page-header__list">
-          <li class="page-header__item">Каталог товаров</li>
-          <li class="page-header__item">Вязание на заказ</li>
-          <li class="page-header__item  page-header__item--search">Поиск по сайту</li>
-          <li class="page-header__item  page-header__item--cart">Корзина: пока пуста</li>
+          <li class="page-header__item">
+            <a href="catalog.html">Каталог товаров</a>
+          </li>
+          <li class="page-header__item">
+            <a href="form.html">Вязание на заказ</a>
+          </li>
+          <li class="page-header__item  page-header__item--search">
+            <a href="#">Поиск по сайту</a>
+          </li>
+          <li class="page-header__item  page-header__item--cart">
+            <a href="#">Корзина: пока пуста</a>
+          </li>
         </ul>
       </div>
     </header>
@@ -53,7 +61,7 @@
           </tr>
         </table>
         <a class="best-offer__picture-link" href="">
-          <img class="best-offer__picture" src="#" alt="Корзинки" width="260" height="315">
+          <img class="best-offer__picture" src="http://placehold.it/260x315" alt="Корзинки" width="260" height="315">
         </a>
         <div class="best-offer__price">Цена: 990 руб.</div>
         <div class="btn  best-offer__btn-order">Заказать</div>
@@ -108,7 +116,7 @@
       <a class="btn  feedback-btn">Напишите нам</a>
     </div>
     <div class="modal hidden-element">
-      <form class="modal__form" action="#">
+      <form class="modal__form" action="https://echo.htmlacademy.ru/">
         <div class="modal__title">Добавить в корзину</div>
         <p class="modal__text">Выберите размер:</p>
         <input class="modal__radio  modal__radio--active" type="radio" name="size" value="s" id="s" checked>
