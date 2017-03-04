@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>Мишка - Каталог</title>
+  </head>
+  <body>
+    <header class="page-header">
+      <div class="page-header__logo">
+        <a class="page-header__link" href="#">
+          <img class="page-header__picture" src="#" alt="Логотип" width="90" height="40">
+        </a>
+      </div>
+      <a class="page-header__menu-btn  page-header__menu-btn--open" href="#"></a>
+      <div class="page-header__menu  hidden-element">
+        <ul class="page-header__list">
+          <li class="page-header__item">Каталог товаров</li>
+          <li class="page-header__item">Вязание на заказ</li>
+          <li class="page-header__item  page-header__item--search">Поиск по сайту</li>
+          <li class="page-header__item  page-header__item--cart">Корзина: пока пуста</li>
+        </ul>
+      </div>
+    </header>
+    <div class="content">
+      <h1 class="content__title">Каталог товаров</h1>
+      <div class="catalog">
+        <div class="product  catalog__item">
+          <a class="product__picture-link" href="#">
+            <img class="product__picture" src="#" alt="Зайчик-попрыгайчик" width="260" height="195">
+          </a>
+          <h2 class="product__title">Зайчик-попрыгайчик</h2>
+          <p class="product__description">Рост 30 см, вес 200г</p>
+          <div class="product__price">1200 руб.</div>
+          <div class="product__add-cart"></div>
+        </div>
+        <div class="product  catalog__item">
+          <a class="product__picture-link" href="#">
+            <img class="product__picture" src="#" alt="Корзинка для белья" width="260" height="195">
+          </a>
+          <h2 class="product__title">Корзинка для белья</h2>
+          <p class="product__description">Диаметр 15 см, высота 10 см</p>
+          <div class="product__price">690 руб.</div>
+          <div class="product__add-cart"></div>
+        </div>
+        <div class="product  catalog__item">
+          <a class="product__picture-link" href="#">
+            <img class="product__picture" src="#" alt="Большая корзинка для игрушек" width="260" height="195">
+          </a>
+          <h2 class="product__title">Большая корзинка для игрушек</h2>
+          <p class="product__description">Диаметр 30 см, высота 30 см</p>
+          <div class="product__price">1500 руб.</div>
+          <div class="product__add-cart"></div>
+        </div>
+      </div>
+      <div class="making">
+        <h2 class="making__title">Процесс производства</h2>
+        <video class="making__video" width="260" height="150" poster="#" preload controls>
+          <source src="#" type="video/">
+        </video>
+        <p class="making__description">
+          По просьбам наших фолловеров мы сняли для вас подробное видео о том,
+          как появляются наши товары.
+        </p>
+        <a class="btn  making__btn-order">Сделать заказ</a>
+      </div>
+    </div>
+    <div class="modal hidden-element">
+      <form class="modal__form" action="#">
+        <div class="modal__title">Добавить в корзину</div>
+        <p class="modal__text">Выберите размер:</p>
+        <input class="modal__radio  modal__radio--active" type="radio" name="size" value="s" id="s" checked>
+        <label class="modal__element-label" for="toy">S</label>
+        <input class="modal__radio" type="radio" name="size" value="m" id="m">
+        <label class="modal__element-label" for="toy">M</label>
+        <input class="modal__radio" type="radio" name="size" value="l" id="l">
+        <label class="modal__element-label" for="toy">L</label>
+        <button class="btn  modal__btn" type="submit" name="button">Добавить</button>
+      </form>
+    </div>
+    <footer class="page-footer">
+      <div class="socials">
+        <a class="social  social--instagram" href="#"></a>
+        <a class="social  social--facebook" href="#"></a>
+        <a class="social  social--twitter" href="#"></a>
+      </div>
+      <div class="page-footer__copyright">
+        Разработано
+        <a class="page-footer__copyright-link" href="#"></a>
+      </div>
+    </footer>
+  </body>
+</html>
