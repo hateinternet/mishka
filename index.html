@@ -6,42 +6,36 @@
   </head>
   <body>
     <header class="page-header">
-      <div class="page-header__logo">
-        <a class="page-header__link">
-          <img class="page-header__picture" src="http://placehold.it/90x40" alt="Логотип" width="90" height="40">
-        </a>
-      </div>
-      <a class="page-header__toggle  page-header__toggle--open" href="#"></a>
-      <div class="page-header__menu  hidden-element">
-        <ul class="page-header__list">
-          <li class="page-header__item">
-            <a href="catalog.html">Каталог товаров</a>
+      <a class="page-header__link">
+        <img class="page-header__logo" src="http://placehold.it/90x40" alt="Логотип" width="90" height="40">
+      </a>
+      <button class="page-header__menu-btn  page-header__menu-btn--close"  type="button" name="menu-btn"></button>
+      <nav class="menu  hidden-element">
+        <ul class="menu__list">
+          <li class="menu__item">
+            <a class="menu__link" href="catalog.html">Каталог товаров</a>
           </li>
-          <li class="page-header__item">
-            <a href="form.html">Вязание на заказ</a>
+          <li class="menu__item">
+            <a class="menu__link" href="form.html">Вязание на заказ</a>
           </li>
-          <li class="page-header__item  page-header__item--search">
-            <a href="#">Поиск по сайту</a>
+          <li class="menu__item  menu__item--search">
+            <a class="menu__link" href="#">Поиск по сайту</a>
           </li>
-          <li class="page-header__item  page-header__item--cart">
-            <a href="#">Корзина: пока пуста</a>
+          <li class="menu__item  menu__item--cart">
+            <a class="menu__link" href="#">Корзина: пока пуста</a>
           </li>
         </ul>
-      </div>
+      </nav>
     </header>
-    <div class="content">
+    <main class="content">
       <div class="promo">
         <h1 class="promo__text">Милые штуки ручной работы для дома</h1>
+        <a class="promo__btn  promo__btn--lighter  promo__btn--objects" href="#">Предметы интерьера</a>
+        <a class="promo__btn  promo__btn--darker  promo__btn--toys" href="#">Детские игрушки</a>
       </div>
-      <a class="department  department--lighter  department--objects" href="#">
-        <div class="department__text">Предметы интерьера</div>
-      </a>
-      <a class="department  department--darker  department--toys" href="#">
-        <div class="department__text">Детские игрушки</div>
-      </a>
-      <div class="best-offer">
+      <section class="best-offer">
         <h2 class="best-offer__title">Вязаные корзинки</h2>
-        <p class="best-offer__promo-text">Товар недели</p>
+        <span class="best-offer__promo-text">Товар недели</span>
         <p class="best-offer__description">
           Экологически чистая пряжа, ручная работа. Доступны в шести расцветках,
           и трех размерах.
@@ -64,9 +58,10 @@
           <img class="best-offer__picture" src="http://placehold.it/260x315" alt="Корзинки" width="260" height="315">
         </a>
         <div class="best-offer__price">Цена: 990 руб.</div>
-        <div class="btn  best-offer__btn-order">Заказать</div>
-      </div>
-      <div class="about">
+        <a class="btn  best-offer__btn-order" href="#">Заказать</a>
+      </section>
+      <section class="about">
+        <h2 class="about__title">Коротко о нас:</h2>
         <ul class="about__list">
           <li class="about__item  about__item--flower">Экологически чистые материалы</li>
           <li class="about__item  about__item--money">Скандинавский стиль по российской цене</li>
@@ -75,9 +70,9 @@
           <li class="about__item  about__item--rocket">Поддержка отечественного производителя</li>
           <li class="about__item  about__item--gift">Поставляется в подарочной упаковке</li>
         </ul>
-      </div>
-      <div class="reviews">
-        <div class="reviews__title">Отзывы</div>
+      </section>
+      <section class="reviews">
+        <h2 class="reviews__title">Отзывы</h2>
         <div class="reviews__item">
           <p class="reviews__text">
             Я молодая мама, но всё равно фотографии не набирали и близко такого количества
@@ -93,8 +88,8 @@
           <a class="btn  reviews__control  reviews__control--next" href="#"></a>
         </div>
         <a class="btn  reviews__review-btn" href="#">Написать</a>
-      </div>
-      <div class="contacts">
+      </section>
+      <section class="contacts">
         <table class="contacts__table">
           <tr class="contacts__row">
             <td class="contacts__col">e-mail:</td>
@@ -111,23 +106,10 @@
             </td>
           </tr>
         </table>
-      </div>
+      </section>
       <div class="map"></div>
       <a class="btn  feedback-btn">Напишите нам</a>
-    </div>
-    <div class="modal hidden-element">
-      <form class="modal__form" action="https://echo.htmlacademy.ru/">
-        <div class="modal__title">Добавить в корзину</div>
-        <p class="modal__text">Выберите размер:</p>
-        <input class="modal__radio  modal__radio--active" type="radio" name="size" value="s" id="s" checked>
-        <label class="modal__element-label" for="s">S</label>
-        <input class="modal__radio" type="radio" name="size" value="m" id="m">
-        <label class="modal__element-label" for="m">M</label>
-        <input class="modal__radio" type="radio" name="size" value="l" id="l">
-        <label class="modal__element-label" for="l">L</label>
-        <button class="btn  modal__btn"  type="submit" name="button">Добавить</button>
-      </form>
-    </div>
+    </main>
     <footer class="page-footer">
       <div class="socials">
         <a class="social  social--instagram" href="#"></a>
@@ -139,5 +121,18 @@
         <a class="page-footer__copyright-link" href="#"></a>
       </div>
     </footer>
+    <div class="modal">
+      <form class="modal__form" action="https://echo.htmlacademy.ru/">
+        <div class="modal__title">Добавить в корзину</div>
+        <div class="modal__text">Выберите размер:</div>
+        <input class="modal__radio  modal__radio--active" type="radio" name="size" value="s" id="s" checked>
+        <label class="modal__label" for="s">S</label>
+        <input class="modal__radio" type="radio" name="size" value="m" id="m">
+        <label class="modal__label" for="m">M</label>
+        <input class="modal__radio" type="radio" name="size" value="l" id="l">
+        <label class="modal__label" for="l">L</label>
+        <button class="btn  modal__btn"  type="submit" name="button">Добавить</button>
+      </form>
+    </div>
   </body>
 </html>
