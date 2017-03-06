@@ -6,11 +6,11 @@
   </head>
   <body>
     <header class="page-header">
-      <a class="page-header__link">
+      <a class="page-header__logo-link">
         <img class="page-header__logo" src="http://placehold.it/90x40" alt="Логотип" width="90" height="40">
       </a>
-      <button class="page-header__menu-btn  page-header__menu-btn--close"  type="button" name="menu-btn"></button>
-      <nav class="menu  hidden-element">
+      <button class="page-header__menu-toggle"  type="button" name="menu-toggle"></button>
+      <nav class="menu">
         <ul class="menu__list">
           <li class="menu__item">
             <a class="menu__link" href="catalog.html">Каталог товаров</a>
@@ -22,7 +22,7 @@
             <a class="menu__link" href="#">Поиск по сайту</a>
           </li>
           <li class="menu__item  menu__item--cart">
-            <a class="menu__link" href="#">Корзина: пока пуста</a>
+            <a class="menu__link" href="#"><span class="menu__text">Корзина:</span2> пока пуста</a>
           </li>
         </ul>
       </nav>
@@ -30,8 +30,8 @@
     <main class="content">
       <div class="promo">
         <h1 class="promo__text">Милые штуки ручной работы для дома</h1>
-        <a class="promo__btn  promo__btn--lighter  promo__btn--objects" href="#">Предметы интерьера</a>
-        <a class="promo__btn  promo__btn--darker  promo__btn--toys" href="#">Детские игрушки</a>
+        <a class="promo__btn  promo__btn--objects" href="#">Предметы интерьера</a>
+        <a class="promo__btn  promo__btn--toys" href="#">Детские игрушки</a>
       </div>
       <section class="best-offer">
         <h2 class="best-offer__title">Вязаные корзинки</h2>
@@ -74,12 +74,12 @@
       <section class="reviews">
         <h2 class="reviews__title">Отзывы</h2>
         <div class="reviews__item">
-          <p class="reviews__text">
+          <blockquote class="reviews__text">
             Я молодая мама, но всё равно фотографии не набирали и близко такого количества
             лайков, как у популярных инстамамочек. В отчаянии, я накупила аксессуаров и
             игрушек в Мишке, и мои фотографии сразу стали более стильными, а также набирают
             больше лайков!
-          </p>
+          </blockquote>
           <p class="reviews__author">Анастасия Красильникова</p>
           <p class="reviews__author-link">@misssssiskras</p>
         </div>

@@ -6,11 +6,11 @@
   </head>
   <body>
     <header class="page-header">
-      <a class="page-header__link" href="index.html">
+      <a class="page-header__logo-link" href="index.html">
         <img class="page-header__logo" src="http://placehold.it/90x40" alt="Логотип" width="90" height="40">
       </a>
-      <button class="page-header__menu-btn  page-header__menu-btn--close"  type="button" name="menu-btn"></button>
-      <nav class="menu  hidden-element">
+      <button class="page-header__menu-toggle"  type="button" name="menu-btn"></button>
+      <nav class="menu">
         <ul class="menu__list">
           <li class="menu__item">
             <a class="menu__link" href="catalog.html">Каталог товаров</a>
@@ -22,7 +22,7 @@
             <a class="menu__link" href="#">Поиск по сайту</a>
           </li>
           <li class="menu__item  menu__item--cart">
-            <a class="menu__link" href="#">Корзина: пока пуста</a>
+            <a class="menu__link" href="#"><span class="menu__text">Корзина:</span> пока пуста</a>
           </li>
         </ul>
       </nav>
@@ -78,7 +78,7 @@
           <legend class="order__group-title">Доп</legend>
           <textarea class="order__textarea" name="wishes" placeholder="Опишите все ваши пожелания к заказу"></textarea>
         </fieldset>
-        <p class="order__note">*Поля обязательны для заполнения</p>
+        <span class="order__note">*Поля обязательны для заполнения</span>
         <button class="btn  order__btn" type="submit" name="button">Отправить заказ</button>
       </form>
     </main>

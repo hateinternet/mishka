@@ -6,11 +6,11 @@
   </head>
   <body>
     <header class="page-header">
-      <a class="page-header__link" href="index.html">
+      <a class="page-header__logo-link" href="index.html">
         <img class="page-header__logo" src="http://placehold.it/90x40" alt="Логотип" width="90" height="40">
       </a>
-      <button class="page-header__menu-btn  page-header__menu-btn--close"  type="button" name="menu-btn"></button>
-      <nav class="menu  hidden-element">
+      <button class="page-header__menu-toggle"  type="button" name="menu-btn"></button>
+      <nav class="menu">
         <ul class="menu__list">
           <li class="menu__item">
             <a class="menu__link">Каталог товаров</a>
@@ -22,7 +22,7 @@
             <a class="menu__link" href="#">Поиск по сайту</a>
           </li>
           <li class="menu__item  menu__item--cart">
-            <a class="menu__link" href="#">Корзина: пока пуста</a>
+            <a class="menu__link" href="#"><span class="menu__text">Корзина:</span> пока пуста</a>
           </li>
         </ul>
       </nav>
@@ -66,7 +66,7 @@
       </section>
       <div class="production">
         <h2 class="production__title">Процесс производства</h2>
-        <img class="production__video" src="http://placehold.it/260x150" alt="Процесс производства" width="260" height="150">
+        <div class="production__video"></div>
         <div class="production__video-btn"></div>
         <p class="production__description">
           По просьбам наших фолловеров мы сняли для вас подробное видео о том,
