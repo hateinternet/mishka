@@ -2,11 +2,137 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
-    <title>HTML Academy: Мишка</title>
+    <title>Мишка - Главная</title>
   </head>
   <body>
-
-    <p>Репозиторий создан для обучения на интенсивном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/adaptive">Продвинутый HTML и CSS</a>».</p>
-
+    <header class="page-header">
+      <a class="page-header__logo-link">
+        <img class="page-header__logo" src="http://placehold.it/90x40" alt="Логотип" width="90" height="40">
+      </a>
+      <button class="page-header__menu-toggle"  type="button" name="menu-toggle"></button>
+      <nav class="menu">
+        <ul class="menu__list">
+          <li class="menu__item">
+            <a class="menu__link" href="catalog.html">Каталог товаров</a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="form.html">Вязание на заказ</a>
+          </li>
+          <li class="menu__item  menu__item--search">
+            <a class="menu__link" href="#">Поиск по сайту</a>
+          </li>
+          <li class="menu__item  menu__item--cart">
+            <a class="menu__link" href="#"><span class="menu__text">Корзина:</span> пока пуста</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main class="content">
+      <div class="promo">
+        <h1 class="promo__text">Милые штуки ручной работы для дома</h1>
+        <a class="promo__btn  promo__btn--objects" href="#">Предметы интерьера</a>
+        <a class="promo__btn  promo__btn--toys" href="#">Детские игрушки</a>
+      </div>
+      <section class="best-offer">
+        <h2 class="best-offer__title">Вязаные корзинки</h2>
+        <span class="best-offer__promo-text">Товар недели</span>
+        <p class="best-offer__description">
+          Экологически чистая пряжа, ручная работа. Доступны в шести расцветках,
+          и трех размерах.
+        </p>
+        <table class="best-offer__table">
+          <tr class="best-offer__row">
+            <td class="best-offer__col">Цвет:</td>
+            <td class="best-offer__col">&laquo;Тиффани&raquo;/серый</td>
+          </tr>
+          <tr class="best-offer__row">
+            <td class="best-offer__col">Диаметр:</td>
+            <td class="best-offer__col">25 см</td>
+          </tr>
+          <tr class="best-offer__row">
+            <td class="best-offer__col">Высота:</td>
+            <td class="best-offer__col">15 см</td>
+          </tr>
+        </table>
+        <a class="best-offer__picture-link" href="">
+          <img class="best-offer__picture" src="http://placehold.it/260x315" alt="Корзинки" width="260" height="315">
+        </a>
+        <div class="best-offer__price">Цена: 990 руб.</div>
+        <a class="btn  best-offer__btn-order" href="#">Заказать</a>
+      </section>
+      <section class="about">
+        <h2 class="about__title">Коротко о нас:</h2>
+        <ul class="about__list">
+          <li class="about__item  about__item--flower">Экологически чистые материалы</li>
+          <li class="about__item  about__item--money">Скандинавский стиль по российской цене</li>
+          <li class="about__item  about__item--heart">Увеличивает лайки на фотографиях</li>
+          <li class="about__item  about__item--ball">Связано вручную с любовью и умилением</li>
+          <li class="about__item  about__item--rocket">Поддержка отечественного производителя</li>
+          <li class="about__item  about__item--gift">Поставляется в подарочной упаковке</li>
+        </ul>
+      </section>
+      <section class="reviews">
+        <h2 class="reviews__title">Отзывы</h2>
+        <div class="reviews__item">
+          <blockquote class="reviews__text">
+            Я молодая мама, но всё равно фотографии не набирали и близко такого количества
+            лайков, как у популярных инстамамочек. В отчаянии, я накупила аксессуаров и
+            игрушек в Мишке, и мои фотографии сразу стали более стильными, а также набирают
+            больше лайков!
+          </blockquote>
+          <p class="reviews__author">Анастасия Красильникова</p>
+          <p class="reviews__author-link">@misssssiskras</p>
+        </div>
+        <div class="reviews__controls">
+          <a class="btn  reviews__control  reviews__control--prev" href="#"></a>
+          <a class="btn  reviews__control  reviews__control--next" href="#"></a>
+        </div>
+        <a class="btn  reviews__review-btn" href="#">Написать</a>
+      </section>
+      <section class="contacts">
+        <table class="contacts__table">
+          <tr class="contacts__row">
+            <td class="contacts__col">e-mail:</td>
+            <td class="contacts__col">
+              <a class="contacts__mail" href="mailto:info@mimimishkashop.ru">
+                info@mimimishkashop.ru
+              </a>
+            </td>
+          </tr>
+          <tr class="contacts__row">
+            <td class="contacts__col">адрес:</td>
+            <td class="contacts__col">
+              г.Санкт-Петербург, ул. Большая Конюшенная, д. 19/8, офис 101
+            </td>
+          </tr>
+        </table>
+      </section>
+      <div class="map"></div>
+      <a class="btn  feedback-btn">Напишите нам</a>
+    </main>
+    <footer class="page-footer">
+      <div class="socials">
+        <a class="social  social--instagram" href="#"></a>
+        <a class="social  social--facebook" href="#"></a>
+        <a class="social  social--twitter" href="#"></a>
+      </div>
+      <div class="page-footer__copyright">
+        Разработано
+        <a class="page-footer__copyright-link" href="#"></a>
+      </div>
+    </footer>
+    <div class="modal">
+      <form class="modal__form" action="https://echo.htmlacademy.ru/">
+        <div class="modal__title">Добавить в корзину</div>
+        <div class="modal__text">Выберите размер:</div>
+        <input class="modal__radio  modal__radio--active" type="radio" name="size" value="s" id="s" checked>
+        <label class="modal__label" for="s">S</label>
+        <input class="modal__radio" type="radio" name="size" value="m" id="m">
+        <label class="modal__label" for="m">M</label>
+        <input class="modal__radio" type="radio" name="size" value="l" id="l">
+        <label class="modal__label" for="l">L</label>
+        <button class="btn  modal__btn"  type="submit" name="button">Добавить</button>
+      </form>
+    </div>
   </body>
 </html>
