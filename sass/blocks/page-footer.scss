@@ -32,21 +32,21 @@
     top: -7px;
     left: 57px;
 
-    background-image: url("/img/icon-insta.svg");
+    background-image: url("../../img/icon-insta.svg");
   }
 
   &--facebook::after {
     top: -12px;
     left: 120px;
 
-    background-image: url("/img/icon-fb.svg");
+    background-image: url("../../img/icon-fb.svg");
   }
 
   &--twitter::after {
     top: -7px;
     left: 175px;
 
-    background-image: url("/img/icon-twitter.svg");
+    background-image: url("../../img/icon-twitter.svg");
   }
 }
 
@@ -76,7 +76,7 @@
     width: 40px;
     height: 40px;
 
-    background-image: url("/img/htmlacademy.svg");
+    background-image: url("../../img/htmlacademy.svg");
     background-repeat: no-repeat;
   }
 }

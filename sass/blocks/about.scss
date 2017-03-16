@@ -42,41 +42,41 @@
     top: 5px;
     left: 10px;
 
-    background-image: url("/img/icon-feature-1.svg");
+    background-image: url("../../img/icon-feature-1.svg");
   }
 
   &--money::after {
     top: 5px;
     left: 0;
 
-    background-image: url("/img/icon-feature-3.svg");
+    background-image: url("../../img/icon-feature-3.svg");
   }
 
   &--heart::after {
     top: 10px;
     left: 7px;
 
-    background-image: url("/img/icon-feature-5.svg");
+    background-image: url("../../img/icon-feature-5.svg");
   }
 
   &--ball::after {
     top: 9px;
     left: 4px;
 
-    background-image: url("/img/icon-feature-2.svg");
+    background-image: url("../../img/icon-feature-2.svg");
   }
 
   &--rocket::after {
     top: 10px;
     left: -5px;
 
-    background-image: url("/img/icon-feature-4.svg");
+    background-image: url("../../img/icon-feature-4.svg");
   }
 
   &--gift::after {
     top: 6px;
     left: 3px;
 
-    background-image: url("/img/icon-feature-6.svg");
+    background-image: url("../../img/icon-feature-6.svg");
   }
 }
