@@ -1,5 +1,5 @@
 .promo {
-  background-image: url("../../img/hero-mobile@1x.jpg");
+  background-image: url("../img/hero-mobile@1x.jpg");
   background-repeat: no-repeat;
   background-position: center -15%;
 }
@@ -45,13 +45,13 @@
     top: 25px;
     right: 5px;
 
-    background-image: url("../../img/icon-interior.svg");
+    background-image: url("../img/icon-interior.svg");
   }
 
   &--toys::after {
     top: 20px;
     right: 15px;
 
-    background-image: url("../../img/icon-toy.svg");
+    background-image: url("../img/icon-toy.svg");
   }
 }

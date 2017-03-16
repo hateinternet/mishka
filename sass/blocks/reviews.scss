@@ -2,7 +2,7 @@
   padding: 0 30px;
 
   border-bottom: 8px solid black;
-  border-image: url("../../img/zigzag-line-desktop.svg") 10;
+  border-image: url("../img/zigzag-line-desktop.svg") 10;
 }
 
 .reviews__title {
@@ -64,11 +64,11 @@
   }
 
   &--prev::after {
-    background-image: url("../../img/icon-left-arrow.svg");
+    background-image: url("../img/icon-left-arrow.svg");
   }
 
   &--next::after {
-    background-image: url("../../img/icon-right-arrow.svg");
+    background-image: url("../img/icon-right-arrow.svg");
   }
 }
 
