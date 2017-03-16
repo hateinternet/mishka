@@ -3,14 +3,16 @@
   <head>
     <meta charset="utf-8">
     <title>Мишка - Заказ</title>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
   </head>
-  <body>
+  <body class="page">
     <header class="page-header">
       <a class="page-header__logo-link" href="index.html">
-        <img class="page-header__logo" src="http://placehold.it/90x40" alt="Логотип" width="90" height="40">
+        <img class="page-header__logo" src="img/logo-mobile.svg" alt="Логотип" width="90" height="40">
       </a>
-      <button class="page-header__menu-toggle"  type="button" name="menu-btn"></button>
-      <nav class="menu">
+      <button class="page-header__menu-toggle"  type="button" name="menu-toggle"></button>
+      <nav class="menu  menu--close">
         <ul class="menu__list">
           <li class="menu__item">
             <a class="menu__link" href="catalog.html">Каталог товаров</a>
@@ -62,18 +64,22 @@
           <label class="order__fullname-label" for="first-name">Имя:</label>
           <input class="order__text-field" type="text" name="first-name" id="first-name" placeholder="Введите ваше имя*" required>
           <label class="order__fullname-label" for="last-name">Фамилия:</label>
-          <input class="order__text-field" type="text" name="last-name" id="last-name" placeholder="Укажите вашу фамилию*" required>
+          <input class="order__text-field" type="text" name="last-name" id="last-name" placeholder="Укажите фамилию*" required>
           <label class="order__fullname-label" for="middle-name">Отчество:</label>
           <input class="order__text-field" type="text" name="middle-name" id="middle-name" placeholder="Отчество, если желаете">
         </fieldset>
         <fieldset class="order__group">
           <legend class="order__group-title">Тел</legend>
-          <input class="order__text-field  order__text-field--connect  order__text-field--phone" type="tel" name="tel" placeholder="+7 XXX XX XX*" required>
-        </fieldset>
+          <div class="order__input-wrap  order__input-wrap--phone">
+            <input class="order__text-field  order__text-field--phone" type="tel" name="tel" placeholder="+7 XXX XX XX*" required>
+          </div>
+          </fieldset>
         <fieldset class="order__group">
           <legend class="order__group-title">E-mail</legend>
-          <input class="order__text-field  order__text-field--connect  order__text-field--email" type="email" name="email" placeholder="Ваш Email*" required>
-        </fieldset>
+          <div class="order__input-wrap  order__input-wrap--email">
+            <input class="order__text-field  order__text-field--email" type="email" name="email" placeholder="Ваш Email*" required>
+          </div>
+          </fieldset>
         <fieldset class="order__group">
           <legend class="order__group-title">Доп</legend>
           <textarea class="order__textarea" name="wishes" placeholder="Опишите все ваши пожелания к заказу"></textarea>
@@ -90,8 +96,9 @@
       </div>
       <div class="page-footer__copyright">
         Разработано
-        <a class="page-footer__copyright-link" href="#"></a>
+        <a class="page-footer__copyright-link" href="https://htmlacademy.ru/"></a>
       </div>
     </footer>
+    <script src="js/script.js"></script>
   </body>
 </html>

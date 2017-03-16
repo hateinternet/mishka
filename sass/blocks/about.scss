@@ -1,0 +1,82 @@
+.about {
+  padding: 0 30px;
+}
+
+.about__title {
+  margin: 0;
+  padding: 35px 0 25px;
+
+  font-size: 25px;
+  line-height: 30px;
+}
+
+.about__list {
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+.about__item {
+  position: relative;
+  color: #000000;
+
+  padding-top: 60px;
+  padding-bottom: 23px;
+
+  font-weight: bold;
+  font-size: 17px;
+  line-height: 20px;
+
+  &::after {
+    content: "";
+    position: absolute;
+
+    width: 60px;
+    height: 50px;
+
+    background-repeat: no-repeat;
+  }
+
+  &--flower::after {
+    top: 5px;
+    left: 10px;
+
+    background-image: url("/img/icon-feature-1.svg");
+  }
+
+  &--money::after {
+    top: 5px;
+    left: 0;
+
+    background-image: url("/img/icon-feature-3.svg");
+  }
+
+  &--heart::after {
+    top: 10px;
+    left: 7px;
+
+    background-image: url("/img/icon-feature-5.svg");
+  }
+
+  &--ball::after {
+    top: 9px;
+    left: 4px;
+
+    background-image: url("/img/icon-feature-2.svg");
+  }
+
+  &--rocket::after {
+    top: 10px;
+    left: -5px;
+
+    background-image: url("/img/icon-feature-4.svg");
+  }
+
+  &--gift::after {
+    top: 6px;
+    left: 3px;
+
+    background-image: url("/img/icon-feature-6.svg");
+  }
+}
