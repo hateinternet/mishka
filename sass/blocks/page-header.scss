@@ -1,0 +1,26 @@
+.page-header {
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+.page-header__logo-link {
+  position: absolute;
+  top: 20px;
+  left: 50%;
+
+  transform: translateX(-50%);
+}
+
+.page-header__menu-toggle {
+  padding: 40px;
+
+  background-color: #ffffff;
+  background-image: url("../img/icon-menu-open.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  border: none;
+
+  &--close {
+    background-image: url("../img/icon-menu-close.svg");
+  }
+}

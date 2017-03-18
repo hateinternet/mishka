@@ -1,0 +1,52 @@
+.best-offer {
+  padding: 0 30px;
+
+  border-bottom: 8px solid black;
+  // border-image: url("../img/zigzag-line-desktop.svg") 10;
+}
+
+.best-offer__title {
+  margin: 0;
+  padding: 25px 0 5px;
+
+  font-size: 25px;
+  line-height: 30px;
+}
+
+.best-offer__promo-text {
+  font-size: 20px;
+  line-height: 20px;
+  color: #63d1bb;
+}
+
+.best-offer__description {
+  padding: 5px 0;
+}
+
+.best-offer__table {
+  border-collapse: collapse;
+  font-size: 15px;
+  line-height: 20px;
+  text-align: left;
+}
+
+.best-offer__row {
+  border-bottom: 1px solid #ececec;
+}
+
+.best-offer__col {
+  min-width: 100px;
+  padding: 9px 0;
+}
+
+.best-offer__picture-link {
+  display: block;
+  padding: 30px 0 20px;
+}
+
+.best-offer__price {
+  font-weight: bold;
+  font-size: 17px;
+  line-height: 24px;
+  text-align: center;
+}

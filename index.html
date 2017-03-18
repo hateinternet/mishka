@@ -3,14 +3,16 @@
   <head>
     <meta charset="utf-8">
     <title>Мишка - Главная</title>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
   </head>
-  <body>
+  <body class="page">
     <header class="page-header">
       <a class="page-header__logo-link">
-        <img class="page-header__logo" src="http://placehold.it/90x40" alt="Логотип" width="90" height="40">
+        <img class="page-header__logo" src="img/logo-mobile.svg" alt="Логотип" width="90" height="40">
       </a>
       <button class="page-header__menu-toggle"  type="button" name="menu-toggle"></button>
-      <nav class="menu">
+      <nav class="menu  menu--close">
         <ul class="menu__list">
           <li class="menu__item">
             <a class="menu__link" href="catalog.html">Каталог товаров</a>
@@ -29,7 +31,7 @@
     </header>
     <main class="content">
       <div class="promo">
-        <h1 class="promo__text">Милые штуки ручной работы для дома</h1>
+        <h1 class="promo__text">Милые штуки ручной<br> работы для дома</h1>
         <a class="promo__btn  promo__btn--objects" href="#">Предметы интерьера</a>
         <a class="promo__btn  promo__btn--toys" href="#">Детские игрушки</a>
       </div>
@@ -54,8 +56,8 @@
             <td class="best-offer__col">15 см</td>
           </tr>
         </table>
-        <a class="best-offer__picture-link" href="">
-          <img class="best-offer__picture" src="http://placehold.it/260x315" alt="Корзинки" width="260" height="315">
+        <a class="best-offer__picture-link" href="#">
+          <img class="best-offer__picture" src="img/triple-set-mobile@1x.jpg" alt="Корзинки" width="260" height="315">
         </a>
         <div class="best-offer__price">Цена: 990 руб.</div>
         <a class="btn  best-offer__btn-order" href="#">Заказать</a>
@@ -90,6 +92,7 @@
         <a class="btn  reviews__review-btn" href="#">Написать</a>
       </section>
       <section class="contacts">
+        <h3 class="contacts__title">Контакты</h3>
         <table class="contacts__table">
           <tr class="contacts__row">
             <td class="contacts__col">e-mail:</td>
@@ -112,27 +115,30 @@
     </main>
     <footer class="page-footer">
       <div class="socials">
-        <a class="social  social--instagram" href="#"></a>
-        <a class="social  social--facebook" href="#"></a>
-        <a class="social  social--twitter" href="#"></a>
+        <a class="social  social--instagram" href="#">Инстаграм</a>
+        <a class="social  social--facebook" href="#">Фейсбук</a>
+        <a class="social  social--twitter" href="#">Твиттер</a>
       </div>
       <div class="page-footer__copyright">
         Разработано
-        <a class="page-footer__copyright-link" href="#"></a>
+        <a class="page-footer__copyright-link" href="https://htmlacademy.ru/">HTMLacademy</a>
       </div>
     </footer>
     <div class="modal">
       <form class="modal__form" action="https://echo.htmlacademy.ru/">
         <div class="modal__title">Добавить в корзину</div>
         <div class="modal__text">Выберите размер:</div>
-        <input class="modal__radio  modal__radio--active" type="radio" name="size" value="s" id="s" checked>
-        <label class="modal__label" for="s">S</label>
-        <input class="modal__radio" type="radio" name="size" value="m" id="m">
-        <label class="modal__label" for="m">M</label>
-        <input class="modal__radio" type="radio" name="size" value="l" id="l">
-        <label class="modal__label" for="l">L</label>
+        <div class="modal__controls-wrap">
+          <input class="modal__radio  modal__radio--active" type="radio" name="size" value="s" id="s" checked>
+          <label class="modal__label" for="s">S</label>
+          <input class="modal__radio" type="radio" name="size" value="m" id="m">
+          <label class="modal__label" for="m">M</label>
+          <input class="modal__radio" type="radio" name="size" value="l" id="l">
+          <label class="modal__label" for="l">L</label>
+        </div>
         <button class="btn  modal__btn"  type="submit" name="button">Добавить</button>
       </form>
     </div>
+    <script src="js/script.js"></script>
   </body>
 </html>

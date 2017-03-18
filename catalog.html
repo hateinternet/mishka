@@ -3,14 +3,16 @@
   <head>
     <meta charset="utf-8">
     <title>Мишка - Каталог</title>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
   </head>
-  <body>
+  <body class="page">
     <header class="page-header">
       <a class="page-header__logo-link" href="index.html">
-        <img class="page-header__logo" src="http://placehold.it/90x40" alt="Логотип" width="90" height="40">
+        <img class="page-header__logo" src="img/logo-mobile.svg" alt="Логотип" width="90" height="40">
       </a>
-      <button class="page-header__menu-toggle"  type="button" name="menu-btn"></button>
-      <nav class="menu">
+      <button class="page-header__menu-toggle"  type="button" name="menu-toggle"></button>
+      <nav class="menu  menu--close">
         <ul class="menu__list">
           <li class="menu__item">
             <a class="menu__link">Каталог товаров</a>
@@ -32,7 +34,7 @@
       <section class="catalog">
         <div class="catalog__item">
           <a class="catalog__image-link" href="#">
-            <img class="catalog__image" src="http://placehold.it/260x195" alt="Зайчик-попрыгайчик" width="260" height="195">
+            <img class="catalog__image" src="img/photo-1-mobile@1x.jpg" alt="Зайчик-попрыгайчик" width="259" height="195">
           </a>
           <a class="catalog__title" href="#">Зайчик-попрыгайчик</a>
           <p class="catalog__description">Рост 30 см, вес 200г</p>
@@ -43,7 +45,7 @@
         </div>
         <div class="catalog__item">
           <a class="catalog__image-link" href="#">
-            <img class="catalog__image" src="http://placehold.it/260x195" alt="Корзинка для белья" width="260" height="195">
+            <img class="catalog__image" src="img/photo-2-mobile@1x.jpg" alt="Корзинка для белья" width="259" height="195">
           </a>
           <a class="catalog__title" href="#">Корзинка для белья</a>
           <p class="catalog__description">Диаметр 15 см, высота 10 см</p>
@@ -54,7 +56,7 @@
         </div>
         <div class="catalog__item">
           <a class="catalog__image-link" href="#">
-            <img class="catalog__image" src="http://placehold.it/260x195" alt="Большая корзинка для игрушек" width="260" height="195">
+            <img class="catalog__image" src="img/photo-3-mobile@1x.jpg" alt="Большая корзинка для игрушек" width="259" height="195">
           </a>
           <a class="catalog__title" href="#">Большая корзинка для игрушек</a>
           <p class="catalog__description">Диаметр 30 см, высота 30 см</p>
@@ -67,12 +69,12 @@
       <div class="production">
         <h2 class="production__title">Процесс производства</h2>
         <div class="production__video"></div>
-        <div class="production__video-btn"></div>
+        <!-- <div class="production__video-btn"></div> -->
         <p class="production__description">
           По просьбам наших фолловеров мы сняли для вас подробное видео о том,
           как появляются наши товары.
         </p>
-        <a class="btn  production__btn-order">Сделать заказ</a>
+        <a class="btn  production__btn-order" href="form.html">Сделать заказ</a>
       </div>
     </main>
     <footer class="page-footer">
@@ -83,21 +85,24 @@
       </div>
       <div class="page-footer__copyright">
         Разработано
-        <a class="page-footer__copyright-link" href="#"></a>
+        <a class="page-footer__copyright-link" href="https://htmlacademy.ru/"></a>
       </div>
     </footer>
     <div class="modal">
       <form class="modal__form" action="https://echo.htmlacademy.ru/">
         <div class="modal__title">Добавить в корзину</div>
         <div class="modal__text">Выберите размер:</div>
-        <input class="modal__radio  modal__radio--active" type="radio" name="size" value="s" id="s" checked>
-        <label class="modal__label" for="s">S</label>
-        <input class="modal__radio" type="radio" name="size" value="m" id="m">
-        <label class="modal__label" for="m">M</label>
-        <input class="modal__radio" type="radio" name="size" value="l" id="l">
-        <label class="modal__label" for="l">L</label>
+        <div class="modal__controls-wrap">
+          <input class="modal__radio  modal__radio--active" type="radio" name="size" value="s" id="s" checked>
+          <label class="modal__label" for="s">S</label>
+          <input class="modal__radio" type="radio" name="size" value="m" id="m">
+          <label class="modal__label" for="m">M</label>
+          <input class="modal__radio" type="radio" name="size" value="l" id="l">
+          <label class="modal__label" for="l">L</label>
+        </div>
         <button class="btn  modal__btn"  type="submit" name="button">Добавить</button>
       </form>
     </div>
+    <script src="js/script.js"></script>
   </body>
 </html>
