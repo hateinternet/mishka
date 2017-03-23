@@ -1,82 +1,96 @@
 .page-footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
   background-color: #f1f1f1;
 }
 
-.socials {
-  display: flex;
-  height: 10px;
-  padding: 35px 30px;
-
-  box-shadow: 0 30px 0 -29px #e5e5e5;
+.page-footer__logo-link {
+  display: none;
 }
 
-.social {
-  position: relative;
-
+.page-footer__social-wrap {
   display: flex;
+  flex-direction: row;
   justify-content: center;
+  align-items: center;
+  margin: 0 30px;
+
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.page-footer__social-item {
+  margin: 25px 20px 15px;
 
   font-size: 0;
+}
 
-  &::after {
-    content: "";
-    position: absolute;
-
-    width: 60px;
-    height: 30px;
-
-    background-repeat: no-repeat;
+.page-footer__social-icon {
+  &:hover {
+    fill: #46c1ae;
   }
 
-  &--instagram::after {
-    top: -7px;
-    left: 57px;
-
-    background-image: url("../img/icon-insta.svg");
-  }
-
-  &--facebook::after {
-    top: -12px;
-    left: 120px;
-
-    background-image: url("../img/icon-fb.svg");
-  }
-
-  &--twitter::after {
-    top: -7px;
-    left: 175px;
-
-    background-image: url("../img/icon-twitter.svg");
+  &:active {
+    fill: #bde3dd;
   }
 }
 
 .page-footer__copyright {
   display: flex;
-  justify-content: space-around;
-  padding: 25px 35px 30px;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 0;
 
   font-weight: bold;
   font-size: 19px;
   line-height: 18px;
-  text-align: center;
   color: #000000;
 }
 
 .page-footer__copyright-link {
-  position: relative;
+  display: flex;
+  align-items: center;
+  margin-left: 10px;
 
   font-size: 0;
+}
 
-  &::after {
-    content: "";
-    position: absolute;
-    top: -7px;
-    left: -37px;
+.page-footer__copyright-icon {
+  width: 40px;
 
-    width: 40px;
-    height: 40px;
+  fill: #63d1bb;
 
-    background-image: url("../img/htmlacademy.svg");
-    background-repeat: no-repeat;
+  &:hover {
+    fill: #46c1ae;
+  }
+
+  &:active {
+    fill: #bde3dd;
+  }
+}
+
+@media ($tablet) {
+  .page-footer {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 50px;
+  }
+
+  .page-footer__logo-link {
+    display: block;
+    width: 33%;
+  }
+
+  .page-footer__social-wrap {
+    width: 33%;
+
+    border: none;
+  }
+
+  .page-footer__copyright {
+    justify-content: flex-end;
+    width: 33%;
   }
 }

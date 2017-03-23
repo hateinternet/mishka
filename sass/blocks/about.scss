@@ -1,82 +1,127 @@
 .about {
+  margin-top: 70px;
+  margin-bottom: 40px;
   padding: 0 30px;
+
+  color: #000000;
 }
 
 .about__title {
-  margin: 0;
-  padding: 35px 0 25px;
-
   font-size: 25px;
   line-height: 30px;
 }
 
 .about__list {
-  margin: 0;
-  padding: 0;
-
-  list-style: none;
+  @include list-reset;
 }
 
 .about__item {
   position: relative;
-  color: #000000;
 
-  padding-top: 60px;
-  padding-bottom: 23px;
+  padding-top: 65px;
+  padding-bottom: 18px;
 
   font-weight: bold;
   font-size: 17px;
   line-height: 20px;
+}
 
-  &::after {
-    content: "";
-    position: absolute;
+.about__item-icon {
+  position: absolute;
 
-    width: 60px;
-    height: 50px;
+  fill: #63d1bb;
 
-    background-repeat: no-repeat;
-  }
-
-  &--flower::after {
-    top: 5px;
+  &--feature-1 {
+    top: 10px;
     left: 10px;
-
-    background-image: url("../img/icon-feature-1.svg");
   }
-
-  &--money::after {
-    top: 5px;
+  &--feature-3 {
+    top: 10px;
     left: 0;
-
-    background-image: url("../img/icon-feature-3.svg");
   }
-
-  &--heart::after {
-    top: 10px;
-    left: 7px;
-
-    background-image: url("../img/icon-feature-5.svg");
+  &--feature-5 {
+    top: 15px;
+    left: 8px;
   }
-
-  &--ball::after {
-    top: 9px;
+  &--feature-2 {
+    top: 12px;
     left: 4px;
+  }
+  &--feature-4 {
+    top: 15px;
+    left: -6px;
+  }
+  &--feature-6 {
+    top: 12px;
+    left: 4px;
+  }
+}
 
-    background-image: url("../img/icon-feature-2.svg");
+@media ($tablet) {
+  .about {
+    margin-top: 110px;
+    margin-bottom: 40px;
+    padding-right: 50px;
+    padding-left: 50px;
   }
 
-  &--rocket::after {
-    top: 10px;
-    left: -5px;
-
-    background-image: url("../img/icon-feature-4.svg");
+  .about__title {
+    font-size: 43px;
+    line-height: 50px;
   }
 
-  &--gift::after {
-    top: 6px;
-    left: 3px;
+  .about__list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
 
-    background-image: url("../img/icon-feature-6.svg");
+  .about__item {
+    width: 50%;
+    padding-top: 66px;
+    padding-bottom: 45px;
+
+    font-size: 20px;
+    line-height: 22px;
+
+    &:nth-child(1) {
+      order: 1;
+    }
+
+    &:nth-child(2) {
+      order: 3;
+    }
+
+    &:nth-child(3) {
+      order: 5;
+    }
+
+    &:nth-child(4) {
+      order: 2;
+    }
+
+    &:nth-child(5) {
+      order: 4;
+    }
+
+    &:nth-child(6) {
+      order: 6;
+    }
+  }
+}
+
+@media ($desktop) {
+  .about {
+    margin-top: 147px;
+    margin-bottom: 45px;
+    padding-right: 225px;
+    padding-left: 225px;
+  }
+
+  .about__title {
+    margin-bottom: 37px;
+
+    font-size: 53px;
+    line-height: 57px;
   }
 }

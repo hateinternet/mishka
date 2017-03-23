@@ -1,52 +1,171 @@
 .best-offer {
-  padding: 0 30px;
-
-  border-bottom: 8px solid black;
-  // border-image: url("../img/zigzag-line-desktop.svg") 10;
+  padding: 25px 30px 0;
 }
 
 .best-offer__title {
   margin: 0;
-  padding: 25px 0 5px;
+  margin-bottom: 7px;
 
+  font-weight: bold;
   font-size: 25px;
   line-height: 30px;
+  color: #000000;
 }
 
 .best-offer__promo-text {
-  font-size: 20px;
+  font-weight: bold;
+  font-size: 17px;
   line-height: 20px;
   color: #63d1bb;
+  text-transform: uppercase;
 }
 
 .best-offer__description {
-  padding: 5px 0;
+  margin-top: 23px;
 }
 
 .best-offer__table {
+  width: 100%;
+  margin-bottom: 25px;
+
   border-collapse: collapse;
-  font-size: 15px;
-  line-height: 20px;
-  text-align: left;
 }
 
-.best-offer__row {
-  border-bottom: 1px solid #ececec;
+.best-offer__row .best-offer__col:first-child {
+  width: 95px;
 }
 
 .best-offer__col {
-  min-width: 100px;
-  padding: 9px 0;
-}
+  box-sizing: border-box;
+  padding: 8px 0;
 
-.best-offer__picture-link {
-  display: block;
-  padding: 30px 0 20px;
+  border-bottom: 1px solid #ececec;
 }
 
 .best-offer__price {
+  margin: 20px 0 25px;
+
   font-weight: bold;
   font-size: 17px;
   line-height: 24px;
   text-align: center;
+}
+
+@media ($tablet) {
+  .best-offer {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 40px;
+    padding-right: 50px;
+    padding-left: 50px;
+  }
+
+  .best-offer__title {
+    margin-top: 5px;
+
+    font-size: 43px;
+    line-height: 50px;
+  }
+
+  .best-offer__promo-text {
+    width: 100px;
+    margin-right: 13px;
+
+    line-height: 17px;
+    text-align: center;
+  }
+
+  .best-offer__content-wrap {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-top: 50px;
+  }
+
+  .best-offer__content-inn {
+    width: 290px;
+  }
+
+  .best-offer__description {
+    margin-top: -7px;
+    margin-bottom: 32px;
+
+    font-size: 17px;
+    line-height: 30px;
+  }
+
+  .best-offer__table {
+    line-height: 24px;
+  }
+
+  .best-offer__image-inn {
+    align-self: flex-end;
+    width: 334px;
+  }
+
+  .best-offer__picture {
+    width: 334px;
+  }
+
+  .best-offer__buy-inn {
+    width: 290px;
+    margin-top: -130px;
+  }
+
+  .best-offer__price {
+    margin-top: 12px;
+    margin-bottom: 35px;
+
+    font-size: 20px;
+    line-height: 24px;
+  }
+}
+
+@media ($desktop) {
+  .best-offer {
+    justify-content: flex-start;
+    padding-top: 120px;
+  }
+
+  .best-offer__title {
+    z-index: 1;
+
+    font-size: 53px;
+    line-height: 57px;
+  }
+
+  .best-offer__promo-text {
+    order: -1;
+    margin: 0;
+    padding: 0 35px;
+  }
+
+  .best-offer__content-wrap {
+    margin-top: -165px;
+    margin-left: 175px;
+  }
+
+  .best-offer__content-inn {
+    margin-top: 165px;
+  }
+
+  .best-offer__description {
+    margin-bottom: 45px;
+  }
+
+  .best-offer__image-inn {
+    width: 525px;
+  }
+
+  .best-offer__picture {
+    width: 525px;
+  }
+
+  .best-offer__buy-inn {
+    margin-top: -130px;
+  }
 }
