@@ -1,27 +1,19 @@
-"use srtict";
+"use strict";
 
 (function () {
-  var navButton = document.querySelector(".page-header__menu-toggle");
-  var navMenu = document.querySelector(".menu");
-  var changeVisibility = function () {
-    navButton.classList.toggle("page-header__menu-toggle--close");
-    navMenu.classList.toggle("menu--close");
-  };
-  navButton.addEventListener("click", changeVisibility);
+  var burger = document.querySelector(".burger--nojs");
+  var menu = document.querySelector(".menu--nojs");
+  var userBlock = document.querySelector(".user-block--nojs");
 
-  var modal = document.querySelector(".modal");
-  var btnOrder = document.querySelector(".best-offer__btn-order");
-  var btnsAddCart = document.querySelectorAll('.catalog__add-cart');
-  var showModal = function () {
-    modal.classList.toggle("modal--show");
+  burger.classList.remove("burger--nojs");
+  menu.classList.remove("menu--nojs");
+  userBlock.classList.remove("user-block--nojs");
+
+  var changeVisibility = function () {
+    burger.classList.toggle("burger--close");
+    menu.classList.toggle("menu--close");
+    userBlock.classList.toggle("user-block--close");
   };
-  if (btnOrder && modal) {
-    btnOrder.addEventListener("click", showModal);
-  }
-  if (btnsAddCart && modal) {
-    modal.addEventListener("click", showModal);
-    for (var i = 0; i < btnsAddCart.length; i++) {
-      btnsAddCart[i].addEventListener("click", showModal);
-    }
-  }
-})()
+
+  burger.addEventListener("click", changeVisibility);
+})();

@@ -1,26 +1,27 @@
 .page-header {
+  position: relative;
+
   display: flex;
-  flex-direction: row-reverse;
+  flex-direction: column;
 }
 
-.page-header__logo-link {
-  position: absolute;
-  top: 20px;
-  left: 50%;
+@media ($tablet) {
+  .page-header {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 0 50px;
 
-  transform: translateX(-50%);
+    background-color: #ffffff;
+  }
 }
 
-.page-header__menu-toggle {
-  padding: 40px;
+@media ($desktop) {
+  .page-header {
+    flex-wrap: nowrap;
+    align-items: flex-start;
+    padding: 0;
 
-  background-color: #ffffff;
-  background-image: url("../img/icon-menu-open.svg");
-  background-repeat: no-repeat;
-  background-position: center;
-  border: none;
-
-  &--close {
-    background-image: url("../img/icon-menu-close.svg");
+    background-color: #f9f9f9;
   }
 }

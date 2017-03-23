@@ -3,31 +3,28 @@
   <head>
     <meta charset="utf-8">
     <title>Мишка - Заказ</title>
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body class="page">
     <header class="page-header">
-      <a class="page-header__logo-link" href="index.html">
-        <img class="page-header__logo" src="img/logo-mobile.svg" alt="Логотип" width="90" height="40">
-      </a>
-      <button class="page-header__menu-toggle"  type="button" name="menu-toggle"></button>
-      <nav class="menu  menu--close">
-        <ul class="menu__list">
-          <li class="menu__item">
-            <a class="menu__link" href="catalog.html">Каталог товаров</a>
-          </li>
-          <li class="menu__item">
-            <a class="menu__link">Вязание на заказ</a>
-          </li>
-          <li class="menu__item  menu__item--search">
-            <a class="menu__link" href="#">Поиск по сайту</a>
-          </li>
-          <li class="menu__item  menu__item--cart">
-            <a class="menu__link" href="#"><span class="menu__text">Корзина:</span> пока пуста</a>
-          </li>
-        </ul>
+      <div class="logo">
+        <a class="logo__link" href="index.html">
+          <img class="logo__pic" src="img/logo-mobile.svg" alt="Логотип" width="90" height="40">
+        </a>
+        <button class="burger  burger--nojs" type="button" name="menu-toggle"></button>
+      </div>
+      <nav class="menu  menu--close  menu--nojs">
+        <a class="menu__link" href="catalog.html">Каталог товаров</a>
+        <a class="menu__link">Вязание на заказ</a>
+        <a class="menu__link" href="#">Новые поступления</a>
+        <a class="menu__link" href="#">Распродажа</a>
       </nav>
+      <div class="user-block  user-block--close  user-block--nojs">
+        <a class="user-block__link  user-block__link--search" href="#">Поиск по сайту</a>
+        <a class="user-block__link  user-block__link--cart" href="#"><span class="user-block__text">Корзина:</span> пока пуста</a>
+      </div>
+      <div class="delivery">Бесплатная доставка по России</div>
     </header>
     <main class="content">
       <h1 class="content__title">Вязание на заказ</h1>

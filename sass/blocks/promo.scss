@@ -1,57 +1,75 @@
 .promo {
-  background-image: url("../img/hero-mobile@1x.jpg");
-  background-repeat: no-repeat;
-  background-position: center -15%;
+  background-color: #f9f9f9;
 }
 
 .promo__text {
   margin: 0;
-  padding: 70px 35px 122px;
+  padding: 70px 30px 124px;
 
+  font-weight: bold;
   font-size: 27px;
   line-height: 30px;
   text-align: center;
+  color: #000000;
+}
+
+.promo__btns-wrap {
+  display: flex;
+  flex-direction: column;
 }
 
 .promo__btn {
-  position: relative;
-
   display: block;
-  padding: 25px 185px 30px 30px;
+  box-sizing: border-box;
+  padding: 26px 160px 29px 28px;
 
+  font-weight: bold;
   font-size: 19px;
   line-height: 24px;
   color: #ffffff;
-  text-decoration: none;
 
-  background-color: #63d1bb;
+  background-color: $bg-lightaqua;
 
   &--toys {
-    background-color: #56c3b2;
+    background-color: $bg-darkaqua;
+  }
+}
+
+@media ($tablet) {
+  .promo {
+    padding: 0 50px;
   }
 
-  &::after {
-    content: "";
-    position: absolute;
+  .promo__text {
+    padding: 90px 70px 370px;
 
-    width: 70px;
-    height: 70px;
-
-    background-repeat: no-repeat;
-    opacity: 0.2;
+    font-size: 43px;
+    line-height: 50px;
   }
 
-  &--objects::after {
-    top: 25px;
-    right: 5px;
-
-    background-image: url("../img/icon-interior.svg");
+  .promo__btns-wrap {
+    flex-direction: row;
   }
 
-  &--toys::after {
-    top: 20px;
-    right: 15px;
+  .promo__btn {
+    width: 50%;
+    padding: 30px 160px 32px 35px;
 
-    background-image: url("../img/icon-toy.svg");
+    font-size: 20px;
+    line-height: 30px;
+  }
+}
+
+@media ($desktop) {
+  .promo__text {
+    padding-top: 100px;
+    padding-bottom: 360px;
+
+    font-size: 53px;
+    line-height: 57px;
+  }
+
+  .promo__btn {
+    padding: 28px 350px 30px 38px;
   }
 }

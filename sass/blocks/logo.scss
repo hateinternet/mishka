@@ -1,0 +1,48 @@
+.logo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-sizing: border-box;
+  padding: 0 30px;
+
+  border-bottom: 1px solid #ececec;
+}
+
+.logo__link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 85px;
+}
+
+.logo__pic {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+@media ($tablet) {
+  .logo {
+    order: 1;
+    width: 320px;
+    padding: 0;
+
+    background-color: #ffffff;
+  }
+
+  .logo__link {
+    margin: 0;
+  }
+}
+
+@media ($desktop) {
+  .logo {
+    flex-shrink: 0;
+    order: 2;
+    width: 302px;
+    height: 90px;
+  }
+
+  .logo__pic {
+    margin-left: 70px;
+  }
+}
