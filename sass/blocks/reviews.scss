@@ -76,6 +76,7 @@
     justify-content: space-between;
     padding: 0 50px;
     padding-bottom: 20px;
+    margin-bottom: 80px;
 
     background-image: url("../img/review@1x.jpg");
     background-repeat: no-repeat;
@@ -132,6 +133,7 @@
 @media ($desktop) {
   .reviews {
     margin: 0 50px;
+    margin-bottom: 80px;
     padding-right: 0;
     padding-bottom: 65px;
     padding-left: 175px;
