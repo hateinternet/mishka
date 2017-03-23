@@ -1,7 +1,7 @@
 .btn {
   display: block;
   box-sizing: border-box;
-  padding: 15px 0;
+  padding: 14px 0;
 
   font-weight: bold;
   font-size: 17px;
@@ -11,4 +11,13 @@
   text-transform: uppercase;
 
   border: 2px solid #444444;
+
+  &:hover {
+    background-color: #444444;
+    color: #fff;
+  }
+
+  &:active {
+    color: #7c7c7c;
+  }
 }

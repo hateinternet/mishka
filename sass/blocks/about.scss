@@ -1,5 +1,6 @@
 .about {
   margin-top: 70px;
+  margin-bottom: 40px;
   padding: 0 30px;
 
   color: #000000;
@@ -59,6 +60,7 @@
 @media ($tablet) {
   .about {
     margin-top: 110px;
+    margin-bottom: 40px;
     padding-right: 50px;
     padding-left: 50px;
   }
@@ -76,11 +78,11 @@
 
   .about__item {
     width: 50%;
+    padding-top: 66px;
+    padding-bottom: 45px;
 
     font-size: 20px;
     line-height: 22px;
-    padding-top: 66px;
-    padding-bottom: 45px;
 
     &:nth-child(1) {
       order: 1;
@@ -111,13 +113,15 @@
 @media ($desktop) {
   .about {
     margin-top: 147px;
+    margin-bottom: 45px;
     padding-right: 225px;
     padding-left: 225px;
   }
 
   .about__title {
+    margin-bottom: 37px;
+
     font-size: 53px;
     line-height: 57px;
-    margin-bottom: 37px;
   }
 }
