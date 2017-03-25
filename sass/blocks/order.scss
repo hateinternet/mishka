@@ -50,6 +50,10 @@
   }
 }
 
+.order__field-wrap {
+  margin-top: 17px;
+}
+
 .order__label {
   position: relative;
 
@@ -211,22 +215,135 @@
 
 @media ($tablet) {
   .order {
-    padding: 0 50px;
+    padding: 0;
   }
 
   .order__group {
     display: flex;
     flex-direction: row;
+    padding: 0 50px;
+    padding-top: 60px;
+    padding-bottom: 10px;
 
+    background-color: #ffffff;
     border: none;
+
+    &--bg-grey {
+      align-items: baseline;
+
+      background-color: #f1f1f1;
+    }
   }
 
   .order__group-title {
     display: block;
-    width: 50%;
+    width: 25%;
+    margin: 0;
+    margin-top: 10px;
+    padding: 0;
+
+    &::before {
+      content: none;
+    }
   }
 
   .order__group-inn {
-    width: 50%;
+    width: 75%;
+    padding-top: 0;
+    padding-bottom: 5px;
+
+    &--color {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
+
+    &--name {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+    }
+  }
+
+  .order__label,
+  .order__fullname-label {
+    font-size: 19px;
+  }
+
+  .order__radio + .order__label {
+    margin-top: 10px;
+    margin-bottom: 50px;
+    padding-left: 80px;
+  }
+
+  .order__radio + .order__label::before {
+    top: -15px;
+
+    width: 52px;
+    height: 52px;
+  }
+
+  .order__radio:checked + .order__label::before {
+    box-shadow: inset 0 0 0 13px #ffffff;
+  }
+
+  .order__checkbox + .order__label {
+    box-sizing: border-box;
+    width: 250px;
+    margin: 7px 0 51px;
+    padding-left: 80px;
+  }
+
+  .order__checkbox + .order__label::before {
+    width: 52px;
+    height: 52px;
+  }
+
+  .order__field-wrap {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: baseline;
+    width: 100%;
+    margin-top: 0;
+    margin-bottom: 20px;
+  }
+
+  .order__fullname-label {
+    margin-right: 20px;
+  }
+
+  .order__input-wrap {
+    box-sizing: border-box;
+    width: 100%;
+    margin-left: 40px;
+    padding-top: 0;
+  }
+  .order__input-wrap .order__text-field {
+    background-color: #f1f1f1;
+  }
+
+  .order__textarea {
+    margin-left: 40px;
+  }
+
+  .order__note-wrap {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px 50px 50px;
+  }
+
+  .order__btn {
+    width: 34%;
+    margin: 0;
+  }
+
+  .order__note {
+    font-size: 17px;
+    line-height: 30px;
+    text-align: right;
   }
 }

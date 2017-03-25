@@ -43,7 +43,7 @@
             <label class="order__label" for="toy">Детская игрушка</label>
           </div>
         </div>
-        <div class="order__group">
+        <div class="order__group  order__group--bg-grey">
           <div class="order__group-title">Цвет</div>
           <div class="order__group-inn  order__group-inn--color">
             <input class="order__checkbox  order__checkbox--active" type="checkbox" name="white-color" id="white" checked>
@@ -63,21 +63,27 @@
         <div class="order__group">
           <div class="order__group-title">ФИО</div>
           <div class="order__group-inn order__group-inn--name">
-            <label class="order__fullname-label" for="first-name">Имя:</label>
-            <input class="order__text-field" type="text" name="first-name" id="first-name" placeholder="Введите ваше имя*" required>
-            <label class="order__fullname-label" for="last-name">Фамилия:</label>
-            <input class="order__text-field" type="text" name="last-name" id="last-name" placeholder="Укажите фамилию*" required>
-            <label class="order__fullname-label" for="middle-name">Отчество:</label>
-            <input class="order__text-field" type="text" name="middle-name" id="middle-name" placeholder="Отчество, если желаете">
+            <div class="order__field-wrap">
+              <label class="order__fullname-label" for="first-name">Имя:</label>
+              <input class="order__text-field" type="text" name="first-name" id="first-name" placeholder="Введите ваше имя*" required>
+            </div>
+            <div class="order__field-wrap">
+              <label class="order__fullname-label" for="last-name">Фамилия:</label>
+              <input class="order__text-field" type="text" name="last-name" id="last-name" placeholder="Укажите фамилию*" required>
+            </div>
+            <div class="order__field-wrap">
+              <label class="order__fullname-label" for="middle-name">Отчество:</label>
+              <input class="order__text-field" type="text" name="middle-name" id="middle-name" placeholder="Отчество, если желаете">
+            </div>
           </div>
         </div>
-        <div class="order__group">
+        <div class="order__group  order__group--bg-grey">
           <div class="order__group-title">Тел</div>
           <div class="order__input-wrap  order__input-wrap--phone">
             <input class="order__text-field  order__text-field--phone" type="tel" name="tel" placeholder="+7 XXX XX XX*" required>
           </div>
           </div>
-        <div class="order__group">
+        <div class="order__group  order__group--bg-grey">
           <div class="order__group-title">E-mail</div>
           <div class="order__input-wrap  order__input-wrap--email">
             <input class="order__text-field  order__text-field--email" type="email" name="email" placeholder="Ваш Email*" required>
@@ -87,8 +93,10 @@
           <div class="order__group-title">Доп</div>
           <textarea class="order__textarea" name="wishes" placeholder="Опишите все ваши пожелания к заказу"></textarea>
         </div>
-        <span class="order__note">*Поля обязательны для заполнения</span>
-        <button class="btn  order__btn" type="submit" name="button">Отправить заказ</button>
+        <div class="order__note-wrap">
+          <span class="order__note">*Поля обязательны для заполнения</span>
+          <button class="btn  order__btn" type="submit" name="button">Отправить заказ</button>
+        </div>
       </form>
     </main>
     <footer class="page-footer">
