@@ -38,3 +38,16 @@
     line-height: 30px;
   }
 }
+
+@media ($desktop) {
+  .content__title {
+    font-size: 53px;
+    line-height: 57px;
+    padding-top: 40px;
+    padding-bottom: 100px;
+  }
+
+  .content__description {
+    padding: 125px 175px 0;
+  }
+}

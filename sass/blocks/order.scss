@@ -233,11 +233,23 @@
 
       background-color: #f1f1f1;
     }
+
+    &--contacts {
+      padding-top: 0;
+      padding-bottom: 25px;
+    }
+  }
+
+  .order__contacts-wrap {
+    padding: 40px 0;
+
+    background-color: #f1f1f1;
   }
 
   .order__group-title {
     display: block;
-    width: 25%;
+    // width: 25%;
+    width: 167px;
     margin: 0;
     margin-top: 10px;
     padding: 0;
@@ -311,12 +323,14 @@
   }
 
   .order__fullname-label {
+    margin-top: 0;
     margin-right: 20px;
   }
 
   .order__input-wrap {
     box-sizing: border-box;
     width: 100%;
+    margin-bottom: 0;
     margin-left: 40px;
     padding-top: 0;
   }
@@ -325,6 +339,7 @@
   }
 
   .order__textarea {
+    margin-top: 0;
     margin-left: 40px;
   }
 
@@ -345,5 +360,38 @@
     font-size: 17px;
     line-height: 30px;
     text-align: right;
+  }
+}
+
+@media ($desktop) {
+  .order {
+  }
+
+  .order__group--wishes {
+    padding-right: 225px;
+  }
+
+  .order__group-inn--name {
+    padding-right: 175px;
+  }
+
+  .order__group-title {
+    box-sizing: border-box;
+    width: 175px;
+    padding-left: 60px;
+  }
+
+  .order__input-wrap {
+    margin-left: 20px;
+    padding-right: 175px;
+  }
+
+  .order__textarea {
+    margin-left: 20px;
+  }
+
+  .order__note-wrap {
+    padding-left: 225px;
+    padding-right: 225px;
   }
 }
