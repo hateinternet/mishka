@@ -1,0 +1,24 @@
+.logo-burger-wrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-sizing: border-box;
+  padding: 0 30px;
+
+  @media ($tablet) {
+    order: 1;
+    width: 320px;
+    padding: 0;
+
+    background-color: #ffffff;
+  }
+
+  @media ($desktop) {
+    flex-shrink: 0;
+    order: 2;
+    width: 300px;
+    height: 90px;
+
+    border-bottom: 1px solid #ececec;
+  }
+}

@@ -3,6 +3,8 @@
 @import "scaffolding.scss";
 
 @import "blocks/page-header.scss";
+@import "blocks/additional.scss";
+@import "blocks/logo-burger-wrap";
 @import "blocks/logo.scss";
 @import "blocks/burger.scss";
 @import "blocks/menu.scss";
@@ -17,4 +19,6 @@
 @import "blocks/contacts.scss";
 @import "blocks/page-footer.scss";
 @import "blocks/modal.scss";
-@import "blocks/order.scss"
+@import "blocks/order.scss";
+@import "blocks/catalog.scss";
+@import "blocks/production.scss"
