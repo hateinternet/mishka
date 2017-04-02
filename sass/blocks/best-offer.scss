@@ -116,7 +116,8 @@
   }
 
   .best-offer__content-inner {
-    width: 100%;
+    // width: 100%;
+    max-width: 290px;
   }
 
   .best-offer__description {
@@ -139,10 +140,8 @@
   }
 
   .best-offer__picture {
-    // width: 334px;
     width: auto;
     max-height: 406px;
-    // bullshit
   }
 
   .best-offer__buy-inner {
@@ -207,9 +206,7 @@
   }
 
   .best-offer__picture {
-    // width: 525px;
     max-height: 636px;
-    // bullshit
   }
 
   .best-offer__buy-inner {
