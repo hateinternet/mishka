@@ -460,6 +460,10 @@
 }
 
 @media ($desktop) {
+  .order__container {
+    width: auto;
+  }
+
   .order__group {
     width: 1150px;
 
@@ -481,8 +485,8 @@
   }
 
   .order__group-inner--name {
-    padding-left: 13px;
     padding-right: 175px;
+    padding-left: 13px;
   }
 
   .order__checkbox + .order__label {
@@ -509,9 +513,9 @@
   }
 
   .order__note-wrap {
-    padding-left: 33px;
-    padding-right: 33px;
     padding-top: 36px;
+    padding-right: 33px;
+    padding-left: 33px;
   }
 
   .order__btn {
