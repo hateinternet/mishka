@@ -21,14 +21,13 @@ body {
   line-height: 24px;
   font-family: "Open Sans", "Arial", sans-serif;
   color: #444444;
+  margin: 0;
 
   background-color: #ffffff;
-  @include container;
 }
 
 img {
   max-width: 100%;
-  height: auto;
 }
 
 a {
@@ -39,6 +38,24 @@ a {
 input {
   outline: none;
 }
+
+.container {
+  width: 320px;
+  margin: 0 auto;
+  box-sizing: border-box;
+
+  @media ($tablet) {
+    width: 768px;
+  }
+
+  @media ($desktop) {
+    width: 1150px;
+  }
+}
+
+// .sprite {
+//   display: none;
+// }
 
 .visually-hidden {
   position: absolute;

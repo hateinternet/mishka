@@ -1,6 +1,6 @@
 .user-block {
   position: absolute;
-  top: 250px;
+  top: 238px;
   left: 0;
   z-index: 1;
 
@@ -21,10 +21,10 @@
 .user-block__link {
   position: relative;
 
-  display: block;
+  display: flex;
+  align-items: center;
   box-sizing: border-box;
-  padding: 30px;
-  padding-left: 70px;
+  padding: 27px 0;
 
   font-weight: bold;
   font-size: 17px;
@@ -34,26 +34,31 @@
   background-color: #ffffff;
   border-bottom: 1px solid #ececec;
 
-  &::before {
-    content: "";
-    position: absolute;
-    top: 50%;
-    left: 25px;
+  &:hover {
+    color: rgba(0, 0, 0, 0.6);
 
-    width: 25px;
-    height: 25px;
-
-    background-repeat: no-repeat;
-    background-position: center;
-    transform: translateY(-50%);
+    & .user-block__icon {
+      fill: rgba(99, 209, 187, 1);
+    }
   }
 
-  &--search::before {
-    background-image: url("../img/icon-search.svg");
-  }
+  &:active {
+    color: rgba(0, 0, 0, 0.3);
 
-  &--cart::before {
-    background-image: url("../img/icon-cart.svg");
+    & .user-block__icon {
+      fill: rgba(99, 209, 187, 0.3);
+    }
+  }
+}
+
+.user-block__icon {
+  padding-right: 27px;
+  padding-left: 31px;
+
+  fill: #d3d2d2;
+
+  &--cart {
+    padding-right: 23px;
   }
 }
 
@@ -63,7 +68,7 @@
     z-index: auto;
 
     display: flex;
-    justify-content: flex-end;
+    justify-content: flex-start;
     align-items: stretch;
     order: 2;
     width: 348px;
@@ -71,20 +76,31 @@
 
   .user-block__link {
     padding: 33px 0 32px 80px;
+    padding-left: 0;
 
     background-color: #ffffff;
     border-left: 1px solid #ececec;
   }
 
-  .user-block__link:first-child {
+  .user-block__link--search {
+    box-sizing: border-box;
     width: 84px;
-    padding: 0;
 
     font-size: 0;
   }
 
-  .user-block__link:last-child {
-    width: 264px;
+  .user-block__link--cart {
+    padding-top: 31px;
+    padding-bottom: 34px;
+  }
+
+  .user-block__icon--search {
+    margin: 0 auto;
+    padding: 0;
+  }
+
+  .user-block__icon--cart {
+    padding-right: 30px;
   }
 }
 
@@ -93,14 +109,15 @@
     flex-grow: 1;
     justify-content: flex-start;
     order: 3;
-    width: 400px;
   }
 
-  .user-block__link:first-child {
-    width: 85px;
+  .user-block__link--search {
+    width: 83px;
   }
-  .user-block__link:last-child {
+  .user-block__link--cart {
     box-sizing: border-box;
-    width: 313px;
+    width: 317px;
+    padding-top: 32px;
+    padding-bottom: 33px;
   }
 }

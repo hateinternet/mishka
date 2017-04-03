@@ -1,48 +1,50 @@
 .logo {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
-  box-sizing: border-box;
-  padding: 0 30px;
-
-  border-bottom: 1px solid #ececec;
-}
-
-.logo__link {
-  display: flex;
   justify-content: center;
   align-items: center;
   margin-left: 85px;
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+
+  &--no-press {
+    &:hover {
+      opacity: 1;
+    }
+
+    &:active {
+      opacity: 1;
+    }
+  }
 }
 
 .logo__pic {
-  margin-top: 20px;
-  margin-bottom: 20px;
+  margin-top: 22px;
+  margin-bottom: 16px;
 }
 
 @media ($tablet) {
   .logo {
-    order: 1;
-    width: 320px;
-    padding: 0;
-
-    background-color: #ffffff;
+    margin: 0;
   }
 
-  .logo__link {
-    margin: 0;
+  .logo__pic {
+    width: 112px;
+    height: 45px;
+    margin-top: 21px;
+    margin-bottom: 17px;
   }
 }
 
 @media ($desktop) {
-  .logo {
-    flex-shrink: 0;
-    order: 2;
-    width: 302px;
-    height: 90px;
-  }
-
   .logo__pic {
-    margin-left: 70px;
+    width: 148px;
+    height: 72px;
+    margin-left: 50px;
   }
 }
