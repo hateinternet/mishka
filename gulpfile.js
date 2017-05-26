@@ -1,6 +1,7 @@
 "use strict";
 
 var gulp = require("gulp");
+var ghPages = require("gulp-gh-pages");
 var sass = require("gulp-sass");
 var plumber = require("gulp-plumber");
 var postcss = require("gulp-postcss");
@@ -101,4 +102,10 @@ gulp.task("build", function (fn) {
     "sprite",
     fn
   );
+});
+
+gulp.task('deploy', function() {
+  console.log('---------- Публикация ./build/ на GH pages');
+  return gulp.src('./build/**/*')
+    .pipe(ghPages());
 });
